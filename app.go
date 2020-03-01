@@ -15,7 +15,7 @@ func newApp() *cli.App {
 		Name:  "tommy-sho",
 		Email: "tomiokasyogo@gmail.com",
 	}}
-	app.Action = action
+	app.Action = grouper
 	app.Flags = []cli.Flag{
 		&cli.StringFlag{
 			Name:  "local",
@@ -28,4 +28,14 @@ func newApp() *cli.App {
 	}
 
 	return app
+}
+
+func grouper(c *cli.Context) error {
+	env := Env{
+		Paths:       c.Args().Slice(),
+		Write:       c.Bool("write"),
+		LocalPrefix: c.String("local"),
+	}
+
+	return grouperMain(env)
 }

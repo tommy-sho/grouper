@@ -129,7 +129,7 @@ func processFile(filePath string, reader io.Reader, writer io.Writer, arg argTyp
 	target := filePath
 
 	fset := token.NewFileSet()
-	f, err := parser.ParseFile(fset, filePath, src, 0)
+	f, err := parser.ParseFile(fset, filePath, src, parser.ParseComments)
 	if err != nil {
 		return err
 	}

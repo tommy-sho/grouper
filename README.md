@@ -1,14 +1,12 @@
-<p align="center">
-    <a href="https://github.com/tommy-sho/grouper/releases">
-        <img
-            src="https://img.shields.io/github/v/release/tommy-sho/grouper"
-            alt="GitHub Releases"/>
-    </a>
-    <br />
-    <a href="https://github.com/tommy-sho/grouper/actions">
-        <img src="https://github.com/tommy-sho/grouper/workflows/Test/badge.svg" alt="build status" />
-    </a>
-</p>
+<a href="https://github.com/tommy-sho/grouper/releases">
+    <img
+        src="https://img.shields.io/github/v/release/tommy-sho/grouper"
+        alt="GitHub Releases"/>
+</a>
+<br />
+<a href="https://github.com/tommy-sho/grouper/actions">
+    <img src="https://github.com/tommy-sho/grouper/workflows/Test/badge.svg" alt="build status" />
+</a>
 
 ## Example
 
@@ -32,6 +30,7 @@ import(
 - after grouper run...
 ```go
 package main
+
 import (
         "bytes"
         "errors"
@@ -42,7 +41,7 @@ import (
 )
 ```
 
-- goimports
+- in case of goimports...
 ```go
 package main
 

@@ -1,7 +1,13 @@
 <a href="https://github.com/tommy-sho/grouper/releases">
     <img
-        src="https://img.shields.io/github/v/release/tommy-sho/grouper"
+        src="https://img.shields.io/github/v/release/tommy-sho/grouper.svg"
         alt="GitHub Releases"/>
+</a>
+<br />
+<a href="https://img.shields.io/github/license/tommy-sho/grouper">
+    <img
+        src="https://img.shields.io/github/license/tommy-sho/grouper"
+        alt="license"/>
 </a>
 <br />
 <a href="https://github.com/tommy-sho/grouper/actions">

@@ -1,4 +1,4 @@
-roject_name: grouper
+project_name: grouper
 env:
   - GO111MODULE=on
 before:

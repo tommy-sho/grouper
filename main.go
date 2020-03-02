@@ -7,9 +7,10 @@ import (
 	"github.com/urfave/cli/v2"
 )
 
-const version = "0.0.1"
-
-var revision = "HEAD"
+var (
+	Version  = "0.01"
+	Revision = "HEAD"
+)
 
 func main() {
 	app := newApp()
@@ -23,7 +24,7 @@ func newApp() *cli.App {
 	app := cli.NewApp()
 	app.Name = "grouper"
 	app.Usage = "Force grouped import path"
-	app.Version = fmt.Sprintf("%s-%s", version, revision)
+	app.Version = fmt.Sprintf("%s-%s", Version, Revision)
 	app.Authors = []*cli.Author{{
 		Name:  "tommy-sho",
 		Email: "tomiokasyogo@gmail.com",
